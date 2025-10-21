@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Batch Coders Portal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
+
+</head>
+<body>
+
+    <!--header + navigation-->
+    <header>
+        <h1> A Batch Coders</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="problems.html">Problems</a>
+            <a href="notes.html">Notes</a>
+            <a href="errors.html">Errors</a>
+            <a href="videos.html">Videos</a>
+        </nav>
+    </header>
+
+    <!-- Theme Changer Section -->
+<div class="theme-changer">
+    <label for="bgInput">Choose Background Image:</label>
+    <input type="file" id="bgInput" accept="image/*">
+  </div>
+
+  <button onclick="localStorage.removeItem('userBackground'); location.reload();">
+    Reset Background
+  </button>
+
+    <main>
+        <section>
+            <h2> Welcome to A Batch Coders Portal</h2>
+            <p> Your one-stop resource hub for coding problems, notes, error solutions,and video tutorials. All free and beginner-friendly! Explore, Practice, and improve your coding skills step by step.</p>
+
+            <button>Explore Resources</button>
+        </section>
+    </main>
+
+    <!--Footer-->
+
+    <footer>
+        <p>© A Batch Coders | Owner:- Rajwat Satyam</p>
+    </footer>
+    
+</body>
+</html>

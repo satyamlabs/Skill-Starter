@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> C Language Errors</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!--header -->
+    <!--header-->
+    <header>
+        <h1> A Batch Coders</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="problems.html">Problems</a>
+            <a href="notes.html">Notes</a>
+            <a href="errors.html">Errors</a>
+            <a href="videos.html">Videos</a>
+        </nav>
+    </header>
+
+        <h1> C Language Errors & solutions</h1>
+        <p> common errors beginners face while coding in c.</p>
+
+    </header>
+
+    
+
+    
+    <main>
+        <section class="errors-sections=">
+
+            <div class="error-box">
+                <h2> 1. Missing Semicolon</h2>
+                <p><strong>Error::</strong> expected ';' before 'return'</p>
+
+                <p><strong>Cause::</strong> You forgot to put a semicolon at the end of a statement.</p>
+            </div>
+
+            <div class="error-box">
+                <h2> 2. Undefined'main'</h2>
+                <p><strong>Error::</strong> Undefined Reference ro 'main'</p>
+
+                <p><strong>Cause::</strong> The Compiler couldn't find a proper <code>main()</code> function.</p>
+
+                <p><strong>Fix::</strong>Make sure your program has <code>int main ()</code> function defined properly.</p>
+            </div>
+            
+            <div class="error-box">
+                <h2> 3. Implicit Declaration </h2>\
+                <p><strong>Error::</strong> Implicit Declaration of functions 'printf'</p>
+                
+                <p><strong>Cause::</strong> You forgot to include the header file <code>#include &lt;stdio.h&gt;</code>.</p>
+
+                <p><strong>Fix::</strong> Always include required header files before using functions.</p>
+
+            </div>
+
+            
+            <div class="error-box">
+
+                <h2> 4. Missing return statement </h2>\
+                <p><strong>Error::</strong> control reaches and of non-void function</p>
+                
+                <p><strong>Cause::</strong> Your <code>main()</code> function is of type <code>int</code> but doesn't returna value.</p>
+            
+
+                <p><strong>Fix::</strong> Add <code>return 0;</code> at the end of your <code>main()</code> function.</p>
+            </div>
+            
+            
+            <div class="error-box">
+
+                <h2> 5. Type Mismatch </h2>\
+                <p><strong>Error::</strong> invalid operands to binary expression ('int' and 'char *') </p>
+                
+                <p><strong>Cause::</strong> You are trying to perform an invalid operation between different data types.</p>
+            
+                <p><strong>Fix::</strong> Make sure variable type are compatible during operations.</p>
+            </div>
+            
+        </section>
+    </main>
+
+    <!--Footer-->
+
+    <footer>
+        <p>&copy; A Batch Coders | Owner:- Rajwat Satyam</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
