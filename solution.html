@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programming Notes</title>
+  <title>Programming Solutions</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9; /* Same as other pages */
+      background-color: #f9f9f9; /* Same background as other pages */
       color: #333;
     }
 
@@ -52,17 +52,17 @@
       animation: fadeInUp 0.8s 0.3s forwards;
     }
 
-    /* Notes boxes */
-    .notes-container {
+    /* Solution boxes */
+    .solution-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
       padding: 40px 20px;
     }
-    .note-box {
+    .solution-box {
       background-color: #fff;
-      border-left: 5px solid #ffc107; /* yellow for notes */
+      border-left: 5px solid #28a745; /* green color for solutions */
       padding: 20px;
       width: 300px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -71,28 +71,16 @@
       transform: translateY(20px);
       animation: fadeInUp 0.8s forwards;
     }
-    .note-box:nth-child(1) { animation-delay: 0.2s; }
-    .note-box:nth-child(2) { animation-delay: 0.4s; }
-    .note-box:nth-child(3) { animation-delay: 0.6s; }
-    .note-box h3 {
+    .solution-box:nth-child(1) { animation-delay: 0.2s; }
+    .solution-box:nth-child(2) { animation-delay: 0.4s; }
+    .solution-box:nth-child(3) { animation-delay: 0.6s; }
+    .solution-box h3 {
       margin-top: 0;
-      color: #ffc107;
+      color: #28a745;
     }
-    .note-box p {
+    .solution-box p {
       color: #555;
-    }
-    .download-btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 12px;
-      background-color: #007bff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-    .download-btn:hover {
-      background-color: #0056b3;
+      margin-bottom: 0;
     }
 
     /* Animations */
@@ -114,7 +102,7 @@
     }
 
     @media (max-width: 768px) {
-      .note-box {
+      .solution-box {
         width: 90%;
       }
       .navbar {
@@ -133,31 +121,28 @@
     <a href="errors.html">Errors</a>
     <a href="solution.html">Solutions</a>
     <a href="notes.html">Notes</a>
-    <a href="videos.html">Videos</a>
+    <a href="videos.html">Video</a>
   </nav>
 
   <!-- Page Header -->
   <section class="page-header">
-    <h1>Programming Notes</h1>
-    <p>Download notes to help you understand programming concepts and errors</p>
+    <h1>Solutions for Programming Errors</h1>
+    <p>Check these solutions to fix common issues in your programming projects</p>
   </section>
 
-  <!-- Notes Boxes -->
-  <section class="notes-container">
-    <div class="note-box">
-      <h3>CSS Fundamentals</h3>
-      <p>Learn the basics of CSS styling, selectors, and layouts.</p>
-      <a href="notes/css_fundamentals.pdf" download class="download-btn">Download</a>
+  <!-- Solution Boxes -->
+  <section class="solution-container">
+    <div class="solution-box">
+      <h3>Fix Syntax Errors</h3>
+      <p>Check for missing semicolons, brackets, or typos. Use an IDE or linter to identify issues quickly.</p>
     </div>
-    <div class="note-box">
-      <h3>HTML Basics</h3>
-      <p>Understand the structure of HTML and basic tags.</p>
-      <a href="notes/html_basics.pdf" download class="download-btn">Download</a>
+    <div class="solution-box">
+      <h3>Fix Runtime Errors</h3>
+      <p>Debug your code using console/logs. Handle null values and edge cases to prevent crashes.</p>
     </div>
-    <div class="note-box">
-      <h3>JS Essentials</h3>
-      <p>Get started with JavaScript fundamentals and scripting.</p>
-      <a href="notes/js_essentials.pdf" download class="download-btn">Download</a>
+    <div class="solution-box">
+      <h3>Fix Logical Errors</h3>
+      <p>Review your algorithm and logic. Add test cases to verify the output matches expectations.</p>
     </div>
   </section>
 

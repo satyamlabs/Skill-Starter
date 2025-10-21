@@ -1,70 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Batch Coders Portal</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <script src="js/script.js" defer></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problems | A Batch Coders</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header>
+    <nav class="navbar">
+      <h1>A Batch Coders</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="problems.html" class="active">Problems</a></li>
+        <li><a href="errors.html">Errors</a></li>
+        <li><a href="notes.html">Notes</a></li>
+        <li><a href="videos.html">Videos</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!--header + navigation-->
-    <header>
-        <h1> A Batch Coders</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="problems.html">Problems</a>
-            <a href="notes.html">Notes</a>
-            <a href="errors.html">Errors</a>
-            <a href="videos.html">Videos</a>
-        </nav>
-    </header>
+  <!-- Hero Section -->
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content" data-aos="fade-up">
+        <h1>Practice Coding Problems</h1>
+      <p>Sharpen your skills with beginner to advanced coding challenges</p>
+      <a href="#questions" class="btn">click to get questions</a>
+    </div>
+</section>
 
-    <main>
-        <section>
-            <h2> Coding Problems</h2>
-            <p> Here you can find beginner-friendly coding problems to practice your skills.</p>
+<section id="questions" class="questions" data-aos="fade-up"></section>
 
-            <ul>
-                <li>
-                    <strong> Problem 1 ::</strong> print "hello world" in C.
-                    <br><em>Difficulty::</em> Easy
-                    
+  <section class="container">
+    <h2 class="section-title">Choose a Problem</h2>
+    <div class="card-grid">
+      <div class="card" onclick="openProblem(1)">
+        <h3>Problem 1</h3>
+        <p>Print Hello World</p>
+      </div>
+      <div class="card" onclick="openProblem(2)">
+        <h3>Problem 2</h3>
+        <p>Find Even or Odd</p>
+      </div>
+      <div class="card" onclick="openProblem(3)">
+        <h3>Problem 3</h3>
+        <p>Sum of N Numbers</p>
+      </div>
+      <div class="card" onclick="openProblem(4)">
+        <h3>Problem 4</h3>
+        <p>Factorial Using Loop</p>
+      </div>
+    </div>
+  </section>
 
-                </li>
-                <li>
-                    <strong> Problem 2 ::</strong> sum of two numbers in c.
-                    <br><em>Difficulty::</em> Easy
-                    
-                </li>
-                <li>
-                    <strong> Problem 3 ::</strong> write a program to calculate simple interest.
-                    <br><em>Difficulty::</em> Medium 
+  <!-- Modal -->
+  <div id="problemModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="problemTitle"></h2>
+      <p id="problemDesc"></p>
+      <pre><code id="problemCode"></code></pre>
+    </div>
+  </div>
 
-                </li>
-                <li>
-                    <strong>Problem 4 ::</strong> write a program to demonstrate addition,subtraction,multiplication,and division of any 2 numbers.
-                    <br><em>Difficulty::</em> Medium 
-                </li>
-                <li>
-                    <strong> Problem 5 ::</strong> write a program to generate a fibonacci series.
-                    <br><em>Difficulty ::</em> Hard
-                </li>
-            </ul>
+  <footer>
+    <p>© 2025 A Batch Coders | Built by Satyam Rajwat</p>
+  </footer>
 
-            <button>Load More Problems</button>
-        </section>
-    </main>
-
-    <!--Footer-->
-
-    <footer>
-        <p>© A Batch Coders | Owner:- Rajwat Satyam</p>
-    </footer>
-    
+  <script src="js/script.js"></script>
 </body>
 </html>

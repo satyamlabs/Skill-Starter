@@ -1,53 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Batch Coders Portal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Batch Coders</title>
 
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <script src="js/script.js" defer></script>
+  <!-- AOS Library for Animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Fix for card text visibility -->
+  <style>
+    .card {
+      position: relative; /* ensures text is above any overlay */
+      z-index: 10;        /* bring text above background/overlay */
+      color: #fff;        /* make text clearly visible */
+    }
+  </style>
 </head>
 <body>
 
-    <!--header + navigation-->
-    <header>
-        <h1> A Batch Coders</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="problems.html">Problems</a>
-            <a href="notes.html">Notes</a>
-            <a href="errors.html">Errors</a>
-            <a href="videos.html">Videos</a>
-        </nav>
-    </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">A Batch Coders</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="problems.html">Problems</a></li>
+      <li><a href="errors.html">Errors</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="videos.html">Videos</a></li>
+    </ul>
+  </nav>
 
-    <!-- Theme Changer Section -->
-<div class="theme-changer">
-    <label for="bgInput">Choose Background Image:</label>
-    <input type="file" id="bgInput" accept="image/*">
-  </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content" data-aos="fade-up">
+      <h1>A Batch Coders</h1>
+      <h3>💻 Diploma CSE Student</h3>
+      <p>Building my skills in coding, web development, and ethical hacking. Explore my projects, notes, and tutorials!</p>
+      <a href="#about" class="btn">Know More</a>
+    </div>
+  </section>
 
-  <button onclick="localStorage.removeItem('userBackground'); location.reload();">
-    Reset Background
-  </button>
+  <!-- About Section -->
+  <section id="about" class="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>🎓 Pursuing Diploma in Computer Science Engineering. Passionate about coding, web development, and learning ethical hacking. This project, <strong>A Batch Coders</strong>, showcases my skills and journey as a Diploma CSE student.</p>
+  </section>
 
-    <main>
-        <section>
-            <h2> Welcome to A Batch Coders Portal</h2>
-            <p> Your one-stop resource hub for coding problems, notes, error solutions,and video tutorials. All free and beginner-friendly! Explore, Practice, and improve your coding skills step by step.</p>
+  <!-- Skills Section -->
+  <section id="skills" class="skills" data-aos="fade-up">
+    <h2>My Skills</h2>
+    <div class="card-container">
+      <div class="card">💻 HTML & CSS</div>
+      <div class="card">⚡ JavaScript</div>
+      <div class="card">🔐 Ethical Hacking</div>
+      <div class="card">💡 Web Development</div>
+    </div>
+  </section>
 
-            <button>Explore Resources</button>
-        </section>
-    </main>
+  <footer class="footer" data-aos="fade-up">
+    <p>© A Batch Coders. All rights reserved.</p>
+  </footer>
 
-    <!--Footer-->
+  <!-- AOS Library -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
 
-    <footer>
-        <p>© A Batch Coders | Owner:- Rajwat Satyam</p>
-    </footer>
-    
 </body>
 </html>
