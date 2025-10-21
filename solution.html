@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Solutions</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9; /* Same background as other pages */
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .navbar a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .navbar a:hover {
+      color: #0056b3;
+    }
+
+    /* Page heading */
+    .page-header {
+      text-align: center;
+      padding: 50px 20px 20px 20px;
+    }
+    .page-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: fadeInUp 0.8s forwards;
+    }
+    .page-header p {
+      font-size: 1.2rem;
+      color: #555;
+      opacity: 0;
+      transform: translateY(-10px);
+      animation: fadeInUp 0.8s 0.3s forwards;
+    }
+
+    /* Solution boxes */
+    .solution-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .solution-box {
+      background-color: #fff;
+      border-left: 5px solid #28a745; /* green color for solutions */
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s forwards;
+    }
+    .solution-box:nth-child(1) { animation-delay: 0.2s; }
+    .solution-box:nth-child(2) { animation-delay: 0.4s; }
+    .solution-box:nth-child(3) { animation-delay: 0.6s; }
+    .solution-box h3 {
+      margin-top: 0;
+      color: #28a745;
+    }
+    .solution-box p {
+      color: #555;
+      margin-bottom: 0;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      margin-top: 40px;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .solution-box {
+        width: 90%;
+      }
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="problems.html">Problems</a>
+    <a href="errors.html">Errors</a>
+    <a href="solution.html">Solutions</a>
+    <a href="notes.html">Notes</a>
+    <a href="videos.html">Video</a>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <h1>Solutions for Programming Errors</h1>
+    <p>Check these solutions to fix common issues in your programming projects</p>
+  </section>
+
+  <!-- Solution Boxes -->
+  <section class="solution-container">
+    <div class="solution-box">
+      <h3>Fix Syntax Errors</h3>
+      <p>Check for missing semicolons, brackets, or typos. Use an IDE or linter to identify issues quickly.</p>
+    </div>
+    <div class="solution-box">
+      <h3>Fix Runtime Errors</h3>
+      <p>Debug your code using console/logs. Handle null values and edge cases to prevent crashes.</p>
+    </div>
+    <div class="solution-box">
+      <h3>Fix Logical Errors</h3>
+      <p>Review your algorithm and logic. Add test cases to verify the output matches expectations.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2025 Satyam Rajwat | All Rights Reserved
+  </footer>
+
+</body>
+</html>
